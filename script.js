@@ -18,8 +18,20 @@ function getHumanChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
-    
-    
-    console.log()
+    humanChoice = getHumanChoice().toLowerCase();
+    computerChoice = getComputerChoice();
+
+    let humanChoiceNumber;
+    let computerChoiceNumber;
+
+    if (humanChoice === "rock") {
+        humanChoiceNumber = 0;
+    } else if (humanChoice === "paper") {
+        humanChoiceNumber = 1;
+    } else if (humanChoice === "scissors") {
+        humanChoiceNumber = 2;
+    }
+    console.log(`you played ${humanChoice}, and computer played ${computerChoice}.`);
 }
-console.log(getHumanChoice());
+
+playRound();
