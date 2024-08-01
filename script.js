@@ -74,9 +74,9 @@ function playRound(humanChoice, computerChoice) {
         }
     }
 
-    if (humanScore === 5) {
+    if (humanScore >= 5) {
         results.textContent = `human wins with a score of 5.`
-    } else if (computerScore === 5) {
+    } else if (computerScore >= 5) {
         results.textContent = `computer wins with a score of 5.`
     }
 }
