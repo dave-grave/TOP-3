@@ -15,7 +15,6 @@ btnScissors.addEventListener("click", () => {
 });
 
 
-
 function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3) + 1;
     if (randomNumber === 1) {
@@ -27,12 +26,6 @@ function getComputerChoice() {
     }
 }
 
-// function getHumanChoice() {
-//     let choice = prompt("what do you want to play? (rock/paper/scissors): ");
-//     return choice;
-// }
-
-// function playGame() {
 
 let computerScore = 0;
 let humanScore = 0;
@@ -80,12 +73,3 @@ function playRound(humanChoice, computerChoice) {
         results.textContent = `computer wins with a score of 5.`
     }
 }
-
-    // for (i = 0; i < 5; i++) {
-    //     playRound();    
-    // }
-
-
-//     let winner = (computerScore > humanScore) ? "computer" : "human";
-//     console.log(`${winner} wins (or maybe ties). computer: ${computerScore} human: ${humanScore}`);
-// }
